@@ -6,8 +6,10 @@ class Madlib
 {
 public:
 	string noun;
-	string adjective;
+	string verb;
 	string animal;
 	string madLib;
-	void getMadLib(string noun,string adjective,string animal);
+	void getDesertMadLib(string noun,string verb,string animal);
+	void getHickoryMadLib(string noun, string verb, string animal);
+	void getChickenMadLib(string noun, string verb, string animal);
 };
