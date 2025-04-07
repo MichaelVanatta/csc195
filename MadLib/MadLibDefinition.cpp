@@ -4,7 +4,9 @@ using namespace std;
 
 void Madlib::getMadLib(string noun,string adjective,string animal)
 {
-	madLib = "One day, a " + noun + " decided to explore the " + adjective + " desert.";
+	madLib = "\n---------------------------------------------------------------------\n";
+	madLib += "One day, a " + noun + " decided to explore the " + adjective + " desert.";
 	madLib += " Along the way, it encountered a " + animal + ", ";
-	madLib += "which made the adventure even more exciting!";
+	madLib += "which made the adventure \neven more exciting!";
+	madLib += "\n--------------------------------------------------------------------\n";
 }
