@@ -1,5 +1,4 @@
 #include "Animal.h"
-#include <iostream>
 
 void Animal::Travel()
 {
