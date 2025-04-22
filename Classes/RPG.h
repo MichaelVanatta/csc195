@@ -8,5 +8,5 @@ public:
 	void Write(ostream& ostream) override;
 	eType GetType() override;
 protected:
-	int mods;
+	int hours;
 };
