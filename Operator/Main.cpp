@@ -1,5 +1,4 @@
 #include "Point.h"
-using namespace std;
 using namespace ost;
 
 // operator overloads outside a class requires the right and left sides of the symbol as parameters. Left side is the instance that we are in
@@ -11,6 +10,11 @@ using namespace ost;
 //	return point;
 //}
 
+//void operator << (ostream& ostream,Point p)
+//{
+//	ostream << p.x << " : " << p.y << endl;
+//}
+
 int main()
 {
 	Point point1(10,14);
@@ -20,5 +24,6 @@ int main()
 	//point1.Add(point2);	---   Instead of a method call
 	Point point3 = (point1 + point2) * 3.0f;		// syntactical sugar(looks better), gives operators user-defined meaning
 
-	point3.Write(cout);
+	//point3.Write(cout);
+	cout << point3 << point2;
 }

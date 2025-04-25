@@ -26,4 +26,10 @@ namespace ost
 	{
 		return Point(x * s, y * s);
 	}
+
+	ostream& operator << (ostream& ostream, Point& p)
+	{
+		ostream << p.x << " : " << p.y << endl;
+		return ostream;
+	}
 }

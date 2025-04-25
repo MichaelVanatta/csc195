@@ -9,7 +9,7 @@ namespace ost
 {
 	class Point
 	{
-	public:
+	private:
 		float x, y;
 
 	public:
@@ -18,6 +18,7 @@ namespace ost
 		Point(float x, float y) : x{x}, y{y} {}
 
 		void Write(ostream& ostream);
+		friend ostream& operator << (ostream& ostream, Point& p);
 
 		void Add(Point& point);
 		Point& operator + (Point& point);
